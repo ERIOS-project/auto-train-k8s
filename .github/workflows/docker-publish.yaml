@@ -29,8 +29,8 @@ jobs:
         context: .
         push: true
         tags: |
-          ghcr.io/${{ github.repository_owner }}/auto-train-k8s:latest
-          ghcr.io/${{ github.repository_owner }}/auto-train-k8s:${{ github.sha }}
+          ghcr.io/erios-project/auto-train-k8s:latest
+          ghcr.io/erios-project/auto-train-k8s:${{ github.sha }}
 
     - name: Post log out from GitHub Container Registry
       run: docker logout ghcr.io
